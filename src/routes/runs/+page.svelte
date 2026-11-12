@@ -87,7 +87,7 @@
 		try {
 			allExperiments = await experimentService.fetchAll();
 			experimentOptions = allExperiments.map((exp) => ({
-				label: `${exp.experimentNumber} - ${exp.description}`,
+				label: `${exp.experimentNumber} - ${exp.title}`,
 				value: exp.experimentNumber
 			}));
 		} catch (error) {
